@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADIK - Asesmen Digital Interaktif Kuliner</title>
+<meta name="author" content="Rahmawati Nawir">
+<meta name="description" content="ADIK - Asesmen Digital Interaktif Kuliner: aplikasi asesmen digital interaktif untuk pembelajaran kuliner (boga). Membuat soal otomatis, memetakan soal ke kebutuhan murid, dan membagikannya lewat satu tautan kelas. Created by Rahmawati Nawir.">
+<meta name="keywords" content="asesmen digital, asesmen interaktif, kuliner, boga, tata boga, AKM, asesmen pembelajaran, soal HOTS, diferensiasi, guru SMK, asesmen kurikulum merdeka">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#050718">
+<link rel="canonical" href="https://rahmawatinawir.github.io/adik/">
+
+<!-- Kartu pratinjau saat tautan dibagikan (WhatsApp, Google, media sosial) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ADIK">
+<meta property="og:title" content="ADIK — Asesmen Digital Interaktif Kuliner">
+<meta property="og:description" content="Aplikasi asesmen digital interaktif untuk pembelajaran kuliner: soal otomatis, pemetaan ke kebutuhan murid, dan satu tautan kelas untuk seluruh siswa.">
+<meta property="og:url" content="https://rahmawatinawir.github.io/adik/">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ADIK — Asesmen Digital Interaktif Kuliner">
+<meta name="twitter:description" content="Aplikasi asesmen digital interaktif untuk pembelajaran kuliner: soal otomatis, pemetaan ke kebutuhan murid, dan satu tautan kelas untuk seluruh siswa.">
+
+<!-- Data terstruktur agar Google memahami isi aplikasi -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalApplication",
+  "name": "ADIK — Asesmen Digital Interaktif Kuliner",
+  "alternateName": "ADIK",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web browser (Chrome, Edge, Firefox, Safari)",
+  "inLanguage": "id-ID",
+  "author": {
+    "@type": "Person",
+    "name": "Rahmawati Nawir"
+  },
+  "description": "Aplikasi asesmen digital interaktif untuk pembelajaran kuliner. Membantu guru membuat soal otomatis, memetakan soal ke kebutuhan belajar murid, dan membagikannya lewat satu tautan kelas.",
+  "about": ["Asesmen pembelajaran", "Kuliner", "Tata boga", "Diferensiasi pembelajaran"],
+  "isAccessibleForFree": true,
+  "url": "https://rahmawatinawir.github.io/adik/"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">ADIK</div>
+      <div class="brand-text">
+        <strong>ADIK</strong>
+        <span>Asesmen Digital Interaktif Kuliner</span>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <button class="nav-item" data-page="dashboard" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+        <span>Dashboard</span>
+      </button>
+      <button class="nav-item" data-page="profil" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/><path d="M18.5 3.5l.8 1.6 1.7.3-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.3z"/></svg>
+        <span>Profil Murid</span>
+      </button>
+      <button class="nav-item" data-page="buat" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/><rect x="3" y="3" width="18" height="18" rx="3"/></svg>
+        <span>Buat Asesmen</span>
+      </button>
+      <button class="nav-item" data-page="riwayat" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 4v4h4"/><path d="M12 8v4l3 2"/></svg>
+        <span>Riwayat Asesmen</span>
+      </button>
+      <button class="nav-item" data-page="bank" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H9a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H15a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H20z"/></svg>
+        <span>Bank Soal</span>
+      </button>
+      <button class="nav-item" data-page="rekap" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5.5a3 3 0 0 1 0 5.6"/><path d="M18 20a6 6 0 0 0-3-5.2"/></svg>
+        <span>Rekap Nilai</span>
+      </button>
+      <button class="nav-item" data-page="api" data-action="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+        <span>Pengaturan API</span>
+      </button>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="conn-pill" id="sideConn">
+        <span class="dot"></span>
+        <span class="conn-text">Memuat...</span>
+      </div>
+      <div class="sidebar-credit">Created by <strong>Rahmawati Nawir</strong></div>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" data-action="closeSidebar"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" data-action="toggleSidebar" aria-label="Buka menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <div class="topbar-title">
+        <h1 id="pageTitle">Dashboard</h1>
+        <p id="pageSubtitle">Kelola asesmen pembelajaran dengan mudah.</p>
+      </div>
+      <button class="btn btn-primary topbar-action" data-action="nav" data-page="buat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        <span>Buat Asesmen</span>
+      </button>
+    </header>
+
+    <div class="content" id="content"></div>
+  </main>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+<div class="modal-root" id="modalRoot"></div>
+<iframe id="printFrame" title="Cetak" style="display:none"></iframe>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="app-core.js"></script>
+<script src="app-form.js"></script>
+<script src="app-result.js"></script>
+<script src="app-pages.js"></script>
+<script src="app-student.js"></script>
+<script src="app-profil.js"></script>
+<script src="app-init.js"></script>
+</body>
+</html>

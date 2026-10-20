@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Halaman aplikasi sendiri tidak perlu diindeks, cukup halaman utama
